@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b44c18a-4867-489e-b8f6-e2c1a2ce3160">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="40"/>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="59" width="232" height="20" uuid="2582a924-d2a5-4137-93c4-d97c9eb6769d"/>
+				<textElement>
+					<font size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Cases Reported for Pipe Leak Issues :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="45" height="20" uuid="50a552a8-f4a3-4fb6-a10c-c9fdae1dfd14"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Case ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="0" width="100" height="20" uuid="17296a9d-c73a-415d-a1b6-7ad4d338e71b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Case Category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="0" width="110" height="20" uuid="426ea17c-550b-4538-af8b-e28717d2fe8e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Request Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="0" width="100" height="20" uuid="29aac66a-21e2-473b-8b66-da02af9adfcd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Resolved Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="0" width="100" height="20" uuid="f0bd1f00-2654-4c9a-813b-c57be30fcc35"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Assigned To]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="45" height="20" uuid="81b7d6ce-aa8b-4e7e-a529-48a48b52d081"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="0" width="100" height="20" uuid="c02b03f0-3447-4672-997d-20d604f0e362"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="186" y="0" width="110" height="20" uuid="9e91ffb8-f5b6-405a-8fdb-dc820c2007bb"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="318" y="0" width="100" height="20" uuid="c3d473a0-a745-46e7-ae54-960c2a9ce2f1"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="0" width="100" height="20" uuid="ff0407f4-cba8-4117-bfd3-db8bcb073603"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
